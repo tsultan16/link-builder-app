@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff3737;
+  --color-secondary: #5865f2;
+}
+
+
+@layer components {
+
+  .nav-icon {
+    @apply h-10 w-10 mt-2 mb-2 mx-auto p-1.75 text-gray-500
+    group-hover:text-green-800 /*group-hover:bg-teal-100*/
+     rounded-xl group-hover:rounded-xl transition-all duration-300 ease-linear
+     group-hover:-rotate-45 group-hover:scale-85;
+  }
+
+  .nav-label {
+    @apply 
+      text-xs font-bold text-gray-500
+      transition-all duration-150 scale-100 group-hover:scale-105
+      group-hover:text-green-800 
+  } 
+
+}
